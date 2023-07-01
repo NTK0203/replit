@@ -1,11 +1,7 @@
 N = int(input())
+money = [500,100,50,10]
 count=0
-count+=N//500
-N%=500
-count+=N//100
-N%=100
-count+=N//50
-N%=50
-count+=N//10
-N%=10
+for i in money:
+    count+=N//i
+    N%=i
 print(count)
