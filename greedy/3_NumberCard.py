@@ -3,7 +3,7 @@ number = []
 max=0
 for i in range(N):
     number = list(map(int,input().split()))
-    number.sort()
-    if(number[0]>max):
-        max=number[0]
+    min_num=min(number)
+    if(min_num>max):
+        max=min_num
 print(max)
