@@ -1,9 +1,12 @@
 N, K = map(int, input().split())
 count=0
-while(N!=1):
-    if(N%K==0):
-        N//=K
-    else:
-        N-=1
+while(True):
+    Q=N//K*K
+    count+=N-Q
+    N=Q
+    if(N<K):
+        break
     count+=1
+    N//=K
+count+=N-1
 print(count)
