@@ -15,7 +15,7 @@ def move():
     global x, y, count
     x+=dx[d]
     y+=dy[d]
-    count+=1  
+    count+=1
 
 def back():
     global x, y
