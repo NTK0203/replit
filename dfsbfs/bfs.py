@@ -13,7 +13,7 @@ def bfs(graph, v, visited):
                 queue.append(graph[v][i])
                 print(graph[v][i],end=' ')
                 visited[graph[v][i]]=True
-        v=queue.popleft()
+        v=queue.popleft() 
         
     
 
